@@ -843,6 +843,8 @@ body { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: m
 .mx-chat-topic { max-width: 100%; font-size: 11px; text-align: start; }
 .mx-chat-form { display: flex; gap: 8px; padding: 10px; border-top: 1px solid rgba(39, 58, 52,.14); }
 .mx-chat-form input { min-width: 0; flex: 1; padding: 10px 12px; border: 1px solid rgba(39, 58, 52,.24); border-radius: 11px; background: white; color: var(--espresso); font: inherit; font-size: 13px; }
+body.night .mx-chat-form input { color: #e9efea; caret-color: #8fae9d; background: rgba(14, 21, 18, 0.6); border-color: rgba(255, 255, 255, 0.18); }
+body.night .mx-chat-form input::placeholder { color: #93a399; }
 .mx-chat-form button { width: 44px; border: 0; border-radius: 10px; background: #273a34; color: white; font-size: 18px; cursor: pointer; }
 .mx-chat button:focus-visible, .mx-chat a:focus-visible, .mx-chat input:focus-visible { outline: 2px solid var(--caramel); outline-offset: 2px; }
 @media (max-width: 900px) { .mx-chat { right: max(18px, env(safe-area-inset-right, 0px)); bottom: calc(108px + env(safe-area-inset-bottom, 0px)); } }
