@@ -5073,12 +5073,7 @@ function authView(root, { onSuccess, onLang }) {
       } finally { submit.disabled = false; }
     });
 
-    const demo = login ? h('div', { class: 'demo' },
-      h('p', { class: 'faint' }, t('auth.demo')),
-      h('div', {}, DEMO.map((d) => h('button', {
-        class: 'btn btn-sm', type: 'button',
-        onclick: () => { form.refs.email.control.value = d.email; form.refs.password.control.value = d.pw; form.el.requestSubmit(); },
-      }, t(d.key))))) : null;
+    const demo = null;
 
     clear(root).append(h('main', { class: 'auth' },
       h('div', { class: 'auth-top' }, h('button', { class: 'btn btn-sm glass', type: 'button', onclick: () => { setLang(state.lang === 'ar' ? 'en' : 'ar'); onLang(); } }, icon('globe'), t('common.lang'))),
