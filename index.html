@@ -854,7 +854,7 @@ body { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: m
 @media (max-width: 480px) { .mx-chat-panel { right: -2px; width: calc(100vw - 28px); height: min(620px, calc(100dvh - 190px)); } }
 /* mobile: assistant becomes a near-full-screen sheet pinned to the visual viewport (keyboard-safe) */
 @media (max-width: 900px) {
-  .mx-chat-panel { position: fixed; left: 6px; right: 6px; top: 8px; bottom: auto; width: auto; max-height: none; height: calc(100dvh - 16px); border-radius: 22px; z-index: 60; }
+  .mx-chat-panel { position: fixed; left: 6px; right: 6px; top: 8px; bottom: auto; width: auto; max-height: none; height: calc(100dvh - 16px); border-radius: 22px; z-index: 60; background: #fffdf9; }
   body.chat-open .fab, body.chat-open .fab-backdrop { display: none !important; }
 }
 
